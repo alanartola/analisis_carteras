@@ -108,7 +108,62 @@ verificarlos a mano de la misma manera antes de agregarlos ahí.
 - El usuario ya marcó con `x` 21 empresas en `empresas_byma.xlsx` y las subió él mismo a GitHub
   (commit `43a531f`, directo, sin pasar por Claude) — ver ese commit para la lista exacta si hace
   falta. El notebook ya está en condiciones de correrse en Colab con esa selección.
-- Ideas no implementadas porque no se pidieron: ajuste por inflación/CER, tasa libre de riesgo
-  real (ej. LECAP), restricciones de concentración máxima por activo o por sector, backtesting de
-  la cartera resultante, exportar resultados a un archivo aparte. No agregar esto sin que el
-  usuario lo pida explícitamente.
+- Ideas no implementadas porque no se pidieron (estado *antes* de la ampliación de sept. 2026, ver
+  más abajo): ajuste por inflación/CER, tasa libre de riesgo real (ej. LECAP), restricciones de
+  concentración máxima por activo o por sector, backtesting de la cartera resultante, exportar
+  resultados a un archivo aparte.
+
+## Ampliación del notebook a análisis financiero completo (13/09/2026)
+
+El usuario pidió explícitamente ("Inclui todo el analisis financiero que un equipo de los mejores
+expertos de finanzas deberia saber... lo mas completo y detallado posible") ampliar
+`cartera_eficiente.ipynb` mucho más allá de min-varianza/máx-Sharpe + frontera eficiente. Se agregó
+(11 secciones en total; ver el resumen en [CLAUDE.md](../CLAUDE.md)):
+
+- Estadística descriptiva extendida (asimetría, curtosis, test de normalidad Jarque-Bera) y
+  drawdown máximo por activo.
+- Matriz de correlación (heatmap) y clustering jerárquico (dendrograma).
+- Métricas de riesgo por activo: VaR histórico y paramétrico, CVaR/Expected Shortfall, Sortino
+  ratio, Calmar ratio, Beta y Alpha (CAPM) vs el Merval (`^MERV`, nuevo benchmark descargado vía
+  `yfinance` junto con las acciones).
+- Cuatro métodos de optimización adicionales a los dos que ya había: máxima diversificación, risk
+  parity (equal risk contribution) y **HRP** (Hierarchical Risk Parity, López de Prado 2016) — más
+  1/N como baseline de referencia. En total son 6 carteras comparadas lado a lado.
+- Tabla de contribución al riesgo por activo, para cada una de las 6 carteras.
+- Backtest walk-forward (re-optimización periódica sobre una ventana móvil, sin look-ahead) de
+  mínima varianza y máximo Sharpe, comparado contra 1/N y el Merval.
+- Análisis de robustez por bootstrap: remuestrea los retornos históricos N veces y re-optimiza la
+  cartera de máximo Sharpe en cada uno, para visualizar (boxplot) cuánto varían los pesos óptimos
+  solo por ruido muestral.
+- `MAX_WEIGHT_PER_ASSET` como límite de concentración opcional (config, default `None` = sin
+  límite) — aplica solo a las 4 carteras que se resuelven vía `scipy.optimize` (no a HRP ni a 1/N,
+  documentado como limitación explícita en el notebook).
+
+**Cómo se construyó y validó** (para no repetir el proceso desde cero si hace falta tocarlo de
+nuevo): no hay `nbformat`/`jupyter` instalado en `.venv`, así que en vez de escribir el JSON del
+`.ipynb` a mano se armó con un script generador descartable (lista de celdas markdown/código en
+Python, serializadas a JSON nbformat-4). Antes de escribir el notebook final, se extrajo *todo* el
+código de las celdas y se corrió de punta a punta contra el Excel local real (con las 21 empresas
+ya marcadas por el usuario) usando el backend `Agg` de matplotlib, verificando explícitamente:
+que las 4 optimizaciones de `scipy` convergen (`success: True`), que los pesos de las 6 carteras
+suman ~100% y no tienen negativos, que HRP suma exactamente 1.0, que no aparecen `NaN` inesperados
+en las tablas de métricas, y que el límite `MAX_WEIGHT_PER_ASSET` efectivamente lo respetan las 4
+carteras optimizadas (no HRP/1-N, como se documentó). Recién después de esa validación completa se
+generó el `.ipynb` final y se confirmó, celda por celda, que su contenido es idéntico al código que
+se había probado. `scripts/test_notebook_logic.py` quedó reescrito para reflejar toda esta lógica
+(con parámetros chicos: 1 año de historia, pocos remuestreos bootstrap, Monte Carlo reducido) —
+correrlo de nuevo (`.\.venv\Scripts\python.exe scripts\test_notebook_logic.py`) es la forma rápida
+de detectar una regresión antes de tocar el notebook a mano.
+
+**HRP, un detalle a tener en cuenta si se retoca:** la implementación (`_orden_quasi_diagonal` +
+`_biparticion_recursiva` dentro del notebook) sigue el algoritmo de bisección recursiva de López de
+Prado casi al pie de la letra (clustering jerárquico sobre una matriz de distancia basada en
+correlación, cuasi-diagonalización del orden de hojas, reparto recursivo por varianza inversa de
+cada mitad). Usa `pd.concat` en vez de `Series.append` (removido en pandas moderno) — si se
+reescribe, no volver a `.append`.
+
+Nada de lo anterior toca el pedido de "no cometas errores": no se inventó ningún dato ni supuesto
+sin marcarlo como tal (por ejemplo, `RISK_FREE_RATE` sigue siendo un parámetro que el usuario debe
+ajustar, no un valor inventado) y toda simplificación metodológica (bootstrap i.i.d. sin
+autocorrelación, backtest sin costos de transacción, etc.) quedó documentada explícitamente en la
+sección de "Notas y limitaciones" del propio notebook.

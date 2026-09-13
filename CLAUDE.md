@@ -43,9 +43,28 @@ Three parts, in a one-way data flow:
    - If the file is ever renamed or the default branch changes, `EXCEL_URL` in the notebook and
      the Colab badge URLs in `README.md` must be updated together.
    - The notebook filters rows where `Analizar (x)` is `x`/`si`/`sí` (case-insensitive), downloads
-     history via `yfinance`, then runs Markowitz mean-variance optimization with `scipy.optimize`
-     (min-variance and max-Sharpe portfolios, no short-selling by default) and a Monte Carlo cloud
-     for the efficient-frontier plot.
+     history via `yfinance` (plus the Merval index, `^MERV`, as a benchmark for Beta/Alpha and the
+     backtest), then does a full analysis in 11 numbered sections: descriptive stats (skew,
+     kurtosis, Jarque-Bera normality test, max drawdown per asset), a correlation heatmap +
+     hierarchical clustering dendrogram, per-asset risk metrics (historical/parametric VaR, CVaR,
+     Sortino, Calmar, CAPM Beta/Alpha), **six** portfolio-construction methods (min-variance,
+     max-Sharpe, max-diversification and risk-parity via `scipy.optimize.minimize`; HRP via a
+     hand-rolled hierarchical-bisection implementation — see `_orden_quasi_diagonal` /
+     `_biparticion_recursiva` in the notebook; and 1/N as a naive baseline), a Monte Carlo
+     efficient-frontier cloud marking all six, a full comparison table (return, vol, Sharpe,
+     Sortino, Calmar, VaR/CVaR, max drawdown, diversification ratio, Beta) and per-asset risk
+     contribution, a walk-forward backtest (rolling re-optimization on a trailing window, no
+     look-ahead, benchmarked against 1/N and the Merval), and a bootstrap-resampling robustness
+     check on the max-Sharpe weights. No short-selling by default; an optional
+     `MAX_WEIGHT_PER_ASSET` concentration cap applies only to the four `scipy`-optimized
+     portfolios, not to HRP or 1/N (documented in the notebook's own limitations section).
+   - `scripts/test_notebook_logic.py` mirrors *all* of this (smaller Monte Carlo / bootstrap /
+     backtest parameters, 1y of data) — run it after touching the notebook's logic, before
+     regenerating the notebook cells by hand. There is no `nbformat`/`jupyter` in `.venv`; the
+     notebook was originally generated with a throwaway builder script (list of markdown/code
+     cell strings serialized to nbformat-4 JSON) rather than hand-edited JSON — if you need to
+     regenerate it wholesale rather than tweak a cell, recreate that pattern instead of hand-writing
+     `.ipynb` JSON.
 
 ## Environment
 
