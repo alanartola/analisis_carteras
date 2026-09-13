@@ -105,8 +105,9 @@ verificarlos a mano de la misma manera antes de agregarlos ahí.
 
 ## Estado actual / próximos pasos posibles (no pedidos aún)
 
-- El usuario todavía no marcó ninguna empresa con `x` en el Excel real (las pruebas se hicieron en
-  una copia en memoria). El primer paso para "usar" el proyecto es que él las marque y pushee.
+- El usuario ya marcó con `x` 21 empresas en `empresas_byma.xlsx` y las subió él mismo a GitHub
+  (commit `43a531f`, directo, sin pasar por Claude) — ver ese commit para la lista exacta si hace
+  falta. El notebook ya está en condiciones de correrse en Colab con esa selección.
 - Ideas no implementadas porque no se pidieron: ajuste por inflación/CER, tasa libre de riesgo
   real (ej. LECAP), restricciones de concentración máxima por activo o por sector, backtesting de
   la cartera resultante, exportar resultados a un archivo aparte. No agregar esto sin que el
