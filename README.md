@@ -22,6 +22,8 @@ Link directo al notebook: https://colab.research.google.com/github/alanartola/an
 - [`cartera_eficiente.ipynb`](cartera_eficiente.ipynb) — notebook de optimización de cartera (Colab).
 - [`scripts/`](scripts/) — scripts usados para construir el Excel (descarga de capitalización de mercado vía `yfinance` y armado del archivo).
 - [`requirements.txt`](requirements.txt) — dependencias de Python para correr los scripts localmente.
+- [`CLAUDE.md`](CLAUDE.md) — guía técnica del repo para continuar el desarrollo (arquitectura, comandos, entorno).
+- [`docs/CONTEXTO_PROYECTO.md`](docs/CONTEXTO_PROYECTO.md) — historial de decisiones y motivos detrás de cada una, para retomar el proyecto sin perder contexto.
 
 ## Sobre el universo de empresas
 
