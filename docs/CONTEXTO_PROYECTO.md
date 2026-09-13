@@ -8,8 +8,28 @@ trabajo desde otra PC sin perder contexto. Para instrucciones de uso del día a 
 ## Objetivo del proyecto
 
 Herramienta para que el usuario (Alan) elija acciones del mercado de capitales argentino (BYMA)
-marcándolas en un Excel, y obtenga automáticamente en Google Colab la cartera eficiente de
-Markowitz (mínima varianza y máximo Sharpe ratio) para esas acciones.
+marcándolas en un Excel, y obtenga automáticamente en Google Colab un análisis financiero completo
+(no solo Markowitz clásico — ver "Ampliación..." más abajo) para esas acciones.
+
+## Checklist rápido para retomar esto en una PC nueva
+
+1. Clonar el repo: `git@github.com:alanartola/analisis_carteras.git` (remoto SSH, no HTTPS — ver
+   "Acceso de push a GitHub" más abajo si hay que configurar una clave nueva en esta PC).
+2. Verificar que estén instalados Git, Python 3.x y (opcional) Claude Code CLI — ver "Setup del
+   entorno" más abajo si falta algo.
+3. Crear el entorno virtual y las dependencias (ver [CLAUDE.md](../CLAUDE.md) sección
+   "Environment"): `python -m venv .venv` + `.\.venv\Scripts\python.exe -m pip install -r requirements.txt`.
+4. Leer [CLAUDE.md](../CLAUDE.md) (arquitectura del repo) y este documento completo antes de tocar
+   `cartera_eficiente.ipynb` o los scripts — evita repetir decisiones ya tomadas o re-litigar el
+   hecho de que son 80 empresas y no 100 (ver más abajo).
+5. Estado actual (13/09/2026): 21 empresas marcadas con `x` en `empresas_byma.xlsx`, notebook con
+   11 secciones de análisis ya pusheado a `main` (commit `6d17a3d`). De esas 21, **2 no tienen
+   datos en Yahoo Finance** (`ECOG`, `RICH` → sus tickers `.BA` no devuelven precios) y el notebook
+   las excluye solo automáticamente con un aviso; quedan **19 activos efectivos** en los cálculos.
+   Esto no es un bug a arreglar — es el mismo criterio de "no inventar datos" que se usó para
+   armar el universo de 80 empresas.
+6. Si vas a tocar la lógica del notebook: correr `scripts/test_notebook_logic.py` (contra el Excel
+   local, rápido) antes y después del cambio para detectar regresiones antes de pushear.
 
 ## Setup del entorno (PC #1, Windows 11, sept. 2026)
 
@@ -105,13 +125,16 @@ verificarlos a mano de la misma manera antes de agregarlos ahí.
 
 ## Estado actual / próximos pasos posibles (no pedidos aún)
 
-- El usuario ya marcó con `x` 21 empresas en `empresas_byma.xlsx` y las subió él mismo a GitHub
-  (commit `43a531f`, directo, sin pasar por Claude) — ver ese commit para la lista exacta si hace
-  falta. El notebook ya está en condiciones de correrse en Colab con esa selección.
-- Ideas no implementadas porque no se pidieron (estado *antes* de la ampliación de sept. 2026, ver
-  más abajo): ajuste por inflación/CER, tasa libre de riesgo real (ej. LECAP), restricciones de
-  concentración máxima por activo o por sector, backtesting de la cartera resultante, exportar
-  resultados a un archivo aparte.
+- La selección de empresas marcadas (21, subidas por el usuario en el commit `43a531f`, directo,
+  sin pasar por Claude) y el estado de qué tiene/no tiene datos en Yahoo Finance están en el
+  checklist del principio de este documento — no repetir esa info acá para no tener dos lugares
+  que se puedan desactualizar.
+- Ideas que siguen sin implementarse porque no se pidieron explícitamente (ver también la sección
+  "Ampliación..." de más abajo para lo que sí se agregó en sept. 2026): ajuste por inflación/CER,
+  una tasa libre de riesgo real en vez de 0% (ej. tomar una LECAP corta), restricciones de
+  concentración **por sector** (ya existe el límite por activo individual, `MAX_WEIGHT_PER_ASSET`),
+  costos de transacción/impuestos en el backtest, exportar resultados a un archivo aparte (hoy todo
+  queda dentro del propio notebook de Colab).
 
 ## Ampliación del notebook a análisis financiero completo (13/09/2026)
 
