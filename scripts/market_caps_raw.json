@@ -1,0 +1,722 @@
+[
+  {
+    "ticker": "A3",
+    "yf_ticker": "A3.BA",
+    "name": "A3 Mercados S.A.",
+    "sector": "Finanzas",
+    "market_cap": 772862377984,
+    "currency": "ARS",
+    "price": 3145.0
+  },
+  {
+    "ticker": "AGRO",
+    "yf_ticker": "AGRO.BA",
+    "name": "Agrometal S.A.",
+    "sector": "Industrial",
+    "market_cap": 45719998464,
+    "currency": "ARS",
+    "price": 38.1
+  },
+  {
+    "ticker": "ALUA",
+    "yf_ticker": "ALUA.BA",
+    "name": "Aluar Aluminio Argentino S.A.",
+    "sector": "Materiales",
+    "market_cap": 2440199929856,
+    "currency": "ARS",
+    "price": 871.5
+  },
+  {
+    "ticker": "AUSO",
+    "yf_ticker": "AUSO.BA",
+    "name": "Autopistas del Sol S.A.",
+    "sector": "Industrial",
+    "market_cap": 295644790784,
+    "currency": "ARS",
+    "price": 3345.0
+  },
+  {
+    "ticker": "BBAR",
+    "yf_ticker": "BBAR.BA",
+    "name": "Banco BBVA Argentina S.A.",
+    "sector": "Finanzas",
+    "market_cap": 4861854744576,
+    "currency": "ARS",
+    "price": 7935.0
+  },
+  {
+    "ticker": "VALO",
+    "yf_ticker": "VALO.BA",
+    "name": "Banco de Valores S.A.",
+    "sector": "Finanzas",
+    "market_cap": 613974212608,
+    "currency": "ARS",
+    "price": 535.5
+  },
+  {
+    "ticker": "BHIP",
+    "yf_ticker": "BHIP.BA",
+    "name": "Banco Hipotecario S.A.",
+    "sector": "Finanzas",
+    "market_cap": 453000003584,
+    "currency": "ARS",
+    "price": 302.0
+  },
+  {
+    "ticker": "BMA",
+    "yf_ticker": "BMA.BA",
+    "name": "Banco Macro S.A.",
+    "sector": "Finanzas",
+    "market_cap": 7941227282432,
+    "currency": "ARS",
+    "price": 12420.0
+  },
+  {
+    "ticker": "BPAT",
+    "yf_ticker": "BPAT.BA",
+    "name": "Banco Patagonia S.A.",
+    "sector": "Finanzas",
+    "market_cap": 1377163149312,
+    "currency": "ARS",
+    "price": 1915.0
+  },
+  {
+    "ticker": "GAMI",
+    "yf_ticker": "GAMI.BA",
+    "name": "B Gaming S.A.",
+    "sector": "Tecnologia",
+    "market_cap": 123590000640,
+    "currency": "ARS",
+    "price": 363.5
+  },
+  {
+    "ticker": "BOLT",
+    "yf_ticker": "BOLT.BA",
+    "name": "Boldt S.A.",
+    "sector": "Consumo Discrecional",
+    "market_cap": 157726932992,
+    "currency": "ARS",
+    "price": 64.0
+  },
+  {
+    "ticker": "BYMA",
+    "yf_ticker": "BYMA.BA",
+    "name": "Bolsas y Mercados Argentinos S.A.",
+    "sector": "Finanzas",
+    "market_cap": 2056349155328,
+    "currency": "ARS",
+    "price": 270.0
+  },
+  {
+    "ticker": "CVH",
+    "yf_ticker": "CVH.BA",
+    "name": "Cablevision Holding S.A.",
+    "sector": "Comunicaciones",
+    "market_cap": 1690814513152,
+    "currency": "ARS",
+    "price": 9360.0
+  },
+  {
+    "ticker": "CGPA2",
+    "yf_ticker": "CGPA2.BA",
+    "name": "Camuzzi Gas Pampeana S.A.",
+    "sector": "Servicios Publicos",
+    "market_cap": 576576225280,
+    "currency": "ARS",
+    "price": 1730.0
+  },
+  {
+    "ticker": "CAPX",
+    "yf_ticker": "CAPX.BA",
+    "name": "Capex S.A.",
+    "sector": "Energia",
+    "market_cap": 663470473216,
+    "currency": "ARS",
+    "price": 3690.0
+  },
+  {
+    "ticker": "CARC",
+    "yf_ticker": "CARC.BA",
+    "name": "Carboclor S.A.",
+    "sector": "Industrial",
+    "market_cap": 21832486912,
+    "currency": "ARS",
+    "price": 20.0
+  },
+  {
+    "ticker": "CADO",
+    "yf_ticker": "CADO.BA",
+    "name": "Carlos Casado S.A.",
+    "sector": "Consumo Basico",
+    "market_cap": 67390398464,
+    "currency": "ARS",
+    "price": 547.0
+  },
+  {
+    "ticker": "CELU",
+    "yf_ticker": "CELU.BA",
+    "name": "Celulosa Argentina S.A.",
+    "sector": "Materiales",
+    "market_cap": 2008741707776,
+    "currency": "ARS",
+    "price": 199.0
+  },
+  {
+    "ticker": "CECO2",
+    "yf_ticker": "CECO2.BA",
+    "name": "Central Costanera S.A.",
+    "sector": "Servicios Publicos",
+    "market_cap": 381179691008,
+    "currency": "ARS",
+    "price": 543.0
+  },
+  {
+    "ticker": "CEPU2",
+    "yf_ticker": "CEPU.BA",
+    "name": "Central Puerto S.A.",
+    "sector": "Servicios Publicos",
+    "market_cap": 3379190038528,
+    "currency": "ARS",
+    "price": 2253.0
+  },
+  {
+    "ticker": "URBA",
+    "yf_ticker": "URBA.BA",
+    "name": "Central Urbana S.A.",
+    "sector": "Finanzas",
+    "market_cap": null,
+    "currency": "ARS",
+    "price": null
+  },
+  {
+    "ticker": "INTR",
+    "yf_ticker": "INTR.BA",
+    "name": "Compania Introductora de Buenos Aires S.A.",
+    "sector": "Consumo Basico",
+    "market_cap": 33540769792,
+    "currency": "ARS",
+    "price": 277.0
+  },
+  {
+    "ticker": "CTIO",
+    "yf_ticker": "CTIO.BA",
+    "name": "Consultatio S.A.",
+    "sector": "Bienes Inmobiliarios",
+    "market_cap": 750129315840,
+    "currency": "ARS",
+    "price": 1830.0
+  },
+  {
+    "ticker": "COUR",
+    "yf_ticker": "COUR.BA",
+    "name": "Continental Urbana S.A.I.",
+    "sector": "Bienes Inmobiliarios",
+    "market_cap": 21419999232,
+    "currency": "ARS",
+    "price": 3400.0
+  },
+  {
+    "ticker": "CRES",
+    "yf_ticker": "CRES.BA",
+    "name": "Cresud S.A.",
+    "sector": "Consumo Basico",
+    "market_cap": 1380204281856,
+    "currency": "ARS",
+    "price": 1946.0
+  },
+  {
+    "ticker": "DGCU2",
+    "yf_ticker": "DGCU2.BA",
+    "name": "Distribuidora de Gas Cuyana S.A.",
+    "sector": "Servicios Publicos",
+    "market_cap": 316679782400,
+    "currency": "ARS",
+    "price": 1565.0
+  },
+  {
+    "ticker": "DOME",
+    "yf_ticker": "DOME.BA",
+    "name": "Domec S.A.",
+    "sector": "Consumo Discrecional",
+    "market_cap": 6300000256,
+    "currency": "ARS",
+    "price": 63.0
+  },
+  {
+    "ticker": "ECOG",
+    "yf_ticker": "ECOG.BA",
+    "name": "Ecogas Inversiones S.A.",
+    "sector": "Servicios Publicos",
+    "market_cap": 718016806912,
+    "currency": "ARS",
+    "price": 2870.0
+  },
+  {
+    "ticker": "EDSH",
+    "yf_ticker": "EDSH.BA",
+    "name": "Edesa Holding S.A.",
+    "sector": "Servicios Publicos",
+    "market_cap": 67519848448,
+    "currency": "ARS",
+    "price": 2950.0
+  },
+  {
+    "ticker": "EDLH",
+    "yf_ticker": "EDLH.BA",
+    "name": "Edesal Holding S.A.",
+    "sector": "Servicios Publicos",
+    "market_cap": 1679494528,
+    "currency": "ARS",
+    "price": 22.5
+  },
+  {
+    "ticker": "EMAC",
+    "yf_ticker": "EMAC.BA",
+    "name": "Electromac S.A.",
+    "sector": "Industrial",
+    "market_cap": null,
+    "currency": null,
+    "price": null
+  },
+  {
+    "ticker": "DSUR",
+    "yf_ticker": "DSUR.BA",
+    "name": "Empresa Distribuidora Sur S.A. (Edesur)",
+    "sector": "Servicios Publicos",
+    "market_cap": null,
+    "currency": null,
+    "price": null
+  },
+  {
+    "ticker": "EDN",
+    "yf_ticker": "EDN.BA",
+    "name": "Edenor S.A.",
+    "sector": "Servicios Publicos",
+    "market_cap": null,
+    "currency": "ARS",
+    "price": 1954.0
+  },
+  {
+    "ticker": "FERR",
+    "yf_ticker": "FERR.BA",
+    "name": "Ferrum S.A.",
+    "sector": "Industrial",
+    "market_cap": 87493066752,
+    "currency": "ARS",
+    "price": 18.95
+  },
+  {
+    "ticker": "FIPL",
+    "yf_ticker": "FIPL.BA",
+    "name": "Fiplasto S.A.",
+    "sector": "Materiales",
+    "market_cap": 23439038464,
+    "currency": "ARS",
+    "price": 131.5
+  },
+  {
+    "ticker": "REGE",
+    "yf_ticker": "REGE.BA",
+    "name": "Garcia Reguera S.A.",
+    "sector": "Consumo Discrecional",
+    "market_cap": 1419999969280,
+    "currency": "ARS",
+    "price": 7100.0
+  },
+  {
+    "ticker": "GARO",
+    "yf_ticker": "GARO.BA",
+    "name": "Garovaglio y Zorraquin S.A.",
+    "sector": "Industrial",
+    "market_cap": 19800000512,
+    "currency": "ARS",
+    "price": 450.0
+  },
+  {
+    "ticker": "GCDI",
+    "yf_ticker": "GCDI.BA",
+    "name": "GCDI S.A.",
+    "sector": "Consumo Discrecional",
+    "market_cap": 11623529472,
+    "currency": "ARS",
+    "price": 12.7
+  },
+  {
+    "ticker": "GRIM",
+    "yf_ticker": "GRIM.BA",
+    "name": "Grimoldi S.A.",
+    "sector": "Consumo Discrecional",
+    "market_cap": 106338025472,
+    "currency": "ARS",
+    "price": 2400.0
+  },
+  {
+    "ticker": "GCLA",
+    "yf_ticker": "GCLA.BA",
+    "name": "Grupo Clarin S.A.",
+    "sector": "Comunicaciones",
+    "market_cap": 404681031680,
+    "currency": "ARS",
+    "price": 3790.0
+  },
+  {
+    "ticker": "OEST",
+    "yf_ticker": "OEST.BA",
+    "name": "Grupo Concesionario del Oeste S.A.",
+    "sector": "Industrial",
+    "market_cap": 134000001024,
+    "currency": "ARS",
+    "price": 837.5
+  },
+  {
+    "ticker": "GGAL",
+    "yf_ticker": "GGAL.BA",
+    "name": "Grupo Financiero Galicia S.A.",
+    "sector": "Finanzas",
+    "market_cap": 11243775590400,
+    "currency": "ARS",
+    "price": 7000.0
+  },
+  {
+    "ticker": "SUPV",
+    "yf_ticker": "SUPV.BA",
+    "name": "Grupo Supervielle S.A.",
+    "sector": "Finanzas",
+    "market_cap": 1187345858560,
+    "currency": "ARS",
+    "price": 2712.5
+  },
+  {
+    "ticker": "HAVA",
+    "yf_ticker": "HAVA.BA",
+    "name": "Havanna Holding S.A.",
+    "sector": "Consumo Discrecional",
+    "market_cap": 205050839040,
+    "currency": "ARS",
+    "price": 4365.0
+  },
+  {
+    "ticker": "HARG",
+    "yf_ticker": "HARG.BA",
+    "name": "Holcim (Argentina) S.A.",
+    "sector": "Materiales",
+    "market_cap": 538019987456,
+    "currency": "ARS",
+    "price": 1470.0
+  },
+  {
+    "ticker": "HSAT",
+    "yf_ticker": "HSAT.BA",
+    "name": "Holdsat S.A.",
+    "sector": "Comunicaciones",
+    "market_cap": null,
+    "currency": "ARS",
+    "price": 124.0
+  },
+  {
+    "ticker": "IEB",
+    "yf_ticker": "IEB.BA",
+    "name": "IEB Construcciones S.A.",
+    "sector": "Industrial",
+    "market_cap": null,
+    "currency": "ARS",
+    "price": 1715.0
+  },
+  {
+    "ticker": "PATA",
+    "yf_ticker": "PATA.BA",
+    "name": "Importadora y Exportadora de la Patagonia S.A.",
+    "sector": "Consumo Basico",
+    "market_cap": 619999985664,
+    "currency": "ARS",
+    "price": 1240.0
+  },
+  {
+    "ticker": "ROSE",
+    "yf_ticker": "ROSE.BA",
+    "name": "Instituto Rosenbusch S.A.",
+    "sector": "Salud",
+    "market_cap": 6686545920,
+    "currency": "ARS",
+    "price": 157.0
+  },
+  {
+    "ticker": "INAG",
+    "yf_ticker": "INAG.BA",
+    "name": "Insumos Agroquimicos S.A.",
+    "sector": "Industrial",
+    "market_cap": 150699999232,
+    "currency": "ARS",
+    "price": 6850.0
+  },
+  {
+    "ticker": "IEBA",
+    "yf_ticker": "IEBA.BA",
+    "name": "Inversora Electrica de Buenos Aires S.A.",
+    "sector": "Servicios Publicos",
+    "market_cap": null,
+    "currency": null,
+    "price": null
+  },
+  {
+    "ticker": "INVJ",
+    "yf_ticker": "INVJ.BA",
+    "name": "Inversora Juramento S.A.",
+    "sector": "Consumo Basico",
+    "market_cap": null,
+    "currency": "ARS",
+    "price": 423.0
+  },
+  {
+    "ticker": "IRSA",
+    "yf_ticker": "IRSA.BA",
+    "name": "IRSA Inversiones y Representaciones S.A.",
+    "sector": "Bienes Inmobiliarios",
+    "market_cap": 2093837582336,
+    "currency": "ARS",
+    "price": 2475.0
+  },
+  {
+    "ticker": "RICH",
+    "yf_ticker": "RICH.BA",
+    "name": "Laboratorios Richmond S.A.C.I.F.",
+    "sector": "Salud",
+    "market_cap": 126376075264,
+    "currency": "ARS",
+    "price": 1565.0
+  },
+  {
+    "ticker": "LEDE",
+    "yf_ticker": "LEDE.BA",
+    "name": "Ledesma S.A.",
+    "sector": "Consumo Basico",
+    "market_cap": 364812173312,
+    "currency": "ARS",
+    "price": 832.5
+  },
+  {
+    "ticker": "LOMA",
+    "yf_ticker": "LOMA.BA",
+    "name": "Loma Negra C.I.A.S.A.",
+    "sector": "Materiales",
+    "market_cap": 1820467396608,
+    "currency": "ARS",
+    "price": 3120.0
+  },
+  {
+    "ticker": "LONG",
+    "yf_ticker": "LONG.BA",
+    "name": "Longvie S.A.",
+    "sector": "Consumo Discrecional",
+    "market_cap": 9292237824,
+    "currency": "ARS",
+    "price": 16.8
+  },
+  {
+    "ticker": "METR",
+    "yf_ticker": "METR.BA",
+    "name": "Metrogas S.A.",
+    "sector": "Servicios Publicos",
+    "market_cap": 1350806011904,
+    "currency": "ARS",
+    "price": 2374.0
+  },
+  {
+    "ticker": "MIRG",
+    "yf_ticker": "MIRG.BA",
+    "name": "Mirgor S.A.",
+    "sector": "Consumo Discrecional",
+    "market_cap": 3499613749248,
+    "currency": "ARS",
+    "price": 1955.0
+  },
+  {
+    "ticker": "MOLA",
+    "yf_ticker": "MOLA.BA",
+    "name": "Molinos Agro S.A.",
+    "sector": "Consumo Basico",
+    "market_cap": 1174287417344,
+    "currency": "ARS",
+    "price": 23925.0
+  },
+  {
+    "ticker": "SEMI",
+    "yf_ticker": "SEMI.BA",
+    "name": "Molinos Juan Semino S.A.",
+    "sector": "Consumo Basico",
+    "market_cap": 55619997696,
+    "currency": "ARS",
+    "price": 15.45
+  },
+  {
+    "ticker": "MOLI",
+    "yf_ticker": "MOLI.BA",
+    "name": "Molinos Rio de la Plata S.A.",
+    "sector": "Consumo Basico",
+    "market_cap": 542813749248,
+    "currency": "ARS",
+    "price": 2695.0
+  },
+  {
+    "ticker": "MORI",
+    "yf_ticker": "MORI.BA",
+    "name": "Morixe Hermanos S.A.",
+    "sector": "Consumo Basico",
+    "market_cap": 48872738816,
+    "currency": "ARS",
+    "price": 21.7
+  },
+  {
+    "ticker": "GBAN",
+    "yf_ticker": "GBAN.BA",
+    "name": "Naturgy Ban S.A.",
+    "sector": "Servicios Publicos",
+    "market_cap": 592482729984,
+    "currency": "ARS",
+    "price": 1820.0
+  },
+  {
+    "ticker": "NCON",
+    "yf_ticker": "NCON.BA",
+    "name": "Nuevo Continente S.A.",
+    "sector": "Bienes Inmobiliarios",
+    "market_cap": null,
+    "currency": null,
+    "price": null
+  },
+  {
+    "ticker": "PAMP",
+    "yf_ticker": "PAMP.BA",
+    "name": "Pampa Energia S.A.",
+    "sector": "Servicios Publicos",
+    "market_cap": 7404020301824,
+    "currency": "ARS",
+    "price": 5525.0
+  },
+  {
+    "ticker": "PREN1",
+    "yf_ticker": "PREN1.BA",
+    "name": "Papel Prensa S.A.",
+    "sector": "Materiales",
+    "market_cap": null,
+    "currency": null,
+    "price": null
+  },
+  {
+    "ticker": "PATR",
+    "yf_ticker": "PATR.BA",
+    "name": "Patricios S.A.I.C.",
+    "sector": "Finanzas",
+    "market_cap": null,
+    "currency": "ARS",
+    "price": 1.7
+  },
+  {
+    "ticker": "POLL",
+    "yf_ticker": "POLL.BA",
+    "name": "Polledo S.A.",
+    "sector": "Industrial",
+    "market_cap": 1913277440,
+    "currency": "ARS",
+    "price": 298.0
+  },
+  {
+    "ticker": "RAGH",
+    "yf_ticker": "RAGH.BA",
+    "name": "Raghsa S.A.",
+    "sector": "Bienes Inmobiliarios",
+    "market_cap": 699896627200,
+    "currency": "ARS",
+    "price": 1755.0
+  },
+  {
+    "ticker": "RIGO",
+    "yf_ticker": "RIGO.BA",
+    "name": "Rigolleau S.A.",
+    "sector": "Materiales",
+    "market_cap": 56575086592,
+    "currency": "ARS",
+    "price": 390.0
+  },
+  {
+    "ticker": "SAMI",
+    "yf_ticker": "SAMI.BA",
+    "name": "S.A. San Miguel A.G.I.C.I. y F.",
+    "sector": "Consumo Basico",
+    "market_cap": 823369465856,
+    "currency": "ARS",
+    "price": 443.0
+  },
+  {
+    "ticker": "COME",
+    "yf_ticker": "COME.BA",
+    "name": "Sociedad Comercial del Plata S.A.",
+    "sector": "Energia",
+    "market_cap": 286159994880,
+    "currency": "ARS",
+    "price": 40.88
+  },
+  {
+    "ticker": "TECO2",
+    "yf_ticker": "TECO2.BA",
+    "name": "Telecom Argentina S.A.",
+    "sector": "Comunicaciones",
+    "market_cap": 9126252904448,
+    "currency": "ARS",
+    "price": 4237.5
+  },
+  {
+    "ticker": "TXAR",
+    "yf_ticker": "TXAR.BA",
+    "name": "Ternium Argentina S.A.",
+    "sector": "Materiales",
+    "market_cap": 3017418735616,
+    "currency": "ARS",
+    "price": 668.0
+  },
+  {
+    "ticker": "TRAN",
+    "yf_ticker": "TRAN.BA",
+    "name": "Transener S.A.",
+    "sector": "Servicios Publicos",
+    "market_cap": 1429626290176,
+    "currency": "ARS",
+    "price": 3215.0
+  },
+  {
+    "ticker": "TGNO4",
+    "yf_ticker": "TGNO4.BA",
+    "name": "Transportadora de Gas del Norte S.A.",
+    "sector": "Energia",
+    "market_cap": 1433457524736,
+    "currency": "ARS",
+    "price": 3262.5
+  },
+  {
+    "ticker": "TGSU2",
+    "yf_ticker": "TGSU2.BA",
+    "name": "Transportadora de Gas del Sur S.A.",
+    "sector": "Energia",
+    "market_cap": 7162521714688,
+    "currency": "ARS",
+    "price": 9515.0
+  },
+  {
+    "ticker": "YPFD",
+    "yf_ticker": "YPFD.BA",
+    "name": "YPF S.A.",
+    "sector": "Energia",
+    "market_cap": 34639831891968,
+    "currency": "ARS",
+    "price": 8835.0
+  },
+  {
+    "ticker": "ZOND",
+    "yf_ticker": "ZOND.BA",
+    "name": "Zonda Bitcoin Capital S.A.",
+    "sector": "Materiales",
+    "market_cap": null,
+    "currency": null,
+    "price": null
+  }
+]
